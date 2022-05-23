@@ -23,7 +23,7 @@ Boolean result.
 uses: actions/action-regex-match@v1.0.0
 with:
   text: 'v1.0.0-staging'
-  regexExp: /(v.*-dev)/g
+  regexExp: /(v.*-staging)/g
 ```
 
 ```match: true```
