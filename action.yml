@@ -1,0 +1,15 @@
+name: 'Regex match'
+description: 'Check regex matcch'
+inputs:
+  text:  # id of input
+    description: 'original string'
+    required: true
+  regexExp:
+    description: 'regex expression'
+    required: true
+outputs:
+  match: # id of output
+    description: 'true or false'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
