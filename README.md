@@ -8,27 +8,22 @@ This action replace specific string with exact match.
 
 **Required** Text range.
 
-## `find`
+## `regexExp`
 
-**Required** Exact string to replace.
-
-## `replace`
-
-**Required** Value to replace with.
+**Required** Regex expression.
 
 ## Outputs
 
-## `result`
+## `match`
 
-Result of replaced string in text.
+Boolean result.
 
 ## Example usage
 ```
-uses: actions/replace-string-action@v1.0
+uses: actions/action-regex-match@v1.0.0
 with:
-  text: 'hello-world'
-  find: 'world'
-  replace: 'people'
+  text: 'v1.0.0-staging'
+  regexExp: /(v.*-dev)/g
 ```
 
-```result: hello-people```
+```match: true```
