@@ -6,7 +6,7 @@ This action replace specific string with exact match.
 
 ## `text`
 
-**Required** Text range.
+**Required** Text match sample.
 
 ## `regexExp`
 
